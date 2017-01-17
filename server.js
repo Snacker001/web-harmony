@@ -11,7 +11,7 @@ app.post('/remote', urlencodedParser, function (req, res) {
   if (!req.body) return res.sendStatus(400)
   console.log(req.body);
   var command = req.body.command.replace(" ","_").toLowerCase();
-  var hub_ip = req.body.hub_ip;
+  var hub_ip = req.body.harmony_ip;
   var amt = Number(req.body.count);
   if (command && hub_ip && amt){
     res.send('Received ' + command + ' x' + amt + ' command for ' + hub_ip);
