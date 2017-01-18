@@ -12,57 +12,52 @@ function dostuff(hub_ip, req, amt, res) {
 			play(hub_ip, req, amt, res);
 			break;
 		case 'volume_up':
+		case 'turn_the_volume_up':
 			volume_up(hub_ip, req, amt, res);
 			break;
 		case 'volume_down':
+		case 'turn_the_volume_down':
 			volume_down(hub_ip, req, amt, res);
 			break;
 		case 'mute':
-			mute(hub_ip, req, amt, res);
-			break;
 		case 'unmute':
 			mute(hub_ip, req, amt, res);
 			break;
 		case 'left':
+		case 'go_left':
 			left(hub_ip, req, amt, res);
 			break;
 		case 'right':
+		case 'go_right':
 			right(hub_ip, req, amt, res);
 			break;
 		case 'up':
+		case 'go_up':
 			up(hub_ip, req, amt, res);
 			break;
 		case 'down':
+		case 'go_down':
 			down(hub_ip, req, amt, res);
 			break;
 		case 'select':
 			select(hub_ip, req, amt, res);
 			break;
 		case 'home':
-			home(hub_ip, req, amt, res);
-			break;
 		case 'go_home':
 			home(hub_ip, req, amt, res);
 			break;
 		case 'menu':
-			menu(hub_ip, req, amt, res);
-			break;
 		case 'press_menu':
-			menu(hub_ip, req, amt, res);
-			break;
 		case 'open_menu':
 			menu(hub_ip, req, amt, res);
 			break;
 		case 'back':
-			back(hub_ip, req, amt, res);
-			break;
 		case 'go_back':
 			back(hub_ip, req, amt, res);
 			break;
 		case 'channel':
 			channel(hub_ip, req, amt, res);
 			break;
-
 		default:
 			console.log("unknown command");
 	}
