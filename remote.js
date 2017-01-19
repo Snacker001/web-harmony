@@ -11,12 +11,12 @@ function dostuff(hub_ip, req, amt, res) {
 		case 'play':
 			play(hub_ip, req, amt, res);
 			break;
-		case 'volume_up':
-		case 'turn_the_volume_up':
+		case 'volume up':
+		case 'turn the volume up':
 			volume_up(hub_ip, req, amt, res);
 			break;
-		case 'volume_down':
-		case 'turn_the_volume_down':
+		case 'volume down':
+		case 'turn the volume down':
 			volume_down(hub_ip, req, amt, res);
 			break;
 		case 'mute':
@@ -24,35 +24,35 @@ function dostuff(hub_ip, req, amt, res) {
 			mute(hub_ip, req, amt, res);
 			break;
 		case 'left':
-		case 'go_left':
+		case 'go left':
 			left(hub_ip, req, amt, res);
 			break;
 		case 'right':
-		case 'go_right':
+		case 'go right':
 			right(hub_ip, req, amt, res);
 			break;
 		case 'up':
-		case 'go_up':
+		case 'go up':
 			up(hub_ip, req, amt, res);
 			break;
 		case 'down':
-		case 'go_down':
+		case 'go down':
 			down(hub_ip, req, amt, res);
 			break;
 		case 'select':
 			select(hub_ip, req, amt, res);
 			break;
 		case 'home':
-		case 'go_home':
+		case 'go home':
 			home(hub_ip, req, amt, res);
 			break;
 		case 'menu':
-		case 'press_menu':
-		case 'open_menu':
+		case 'press menu':
+		case 'open menu':
 			menu(hub_ip, req, amt, res);
 			break;
 		case 'back':
-		case 'go_back':
+		case 'go back':
 			back(hub_ip, req, amt, res);
 			break;
 		case 'channel':
